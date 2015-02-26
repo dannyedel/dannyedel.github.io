@@ -1,0 +1,5 @@
+# This site is not meant to be public.
+# It should not be indexed by search engines
+
+User-agent: *
+Disallow: /
