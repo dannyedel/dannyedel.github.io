@@ -1,5 +1,8 @@
-# This site is not meant to be public.
-# It should not be indexed by search engines
+# This site is generally not meant to be public.
+# Exceptions will be listed with Allow rules.
+#
+# Only those parts should be indexed by search engines.
 
 User-agent: *
+Allow: /dspdfviewer/
 Disallow: /
