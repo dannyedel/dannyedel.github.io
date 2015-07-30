@@ -1,15 +1,22 @@
-{% include html_header.html %}
-
-{% if page.title %}
-<h1>{{page.title}}</h1>
-{% endif %}
-{% if page.url != "/index.html" %}
-	<a href="{{site.baseurl}}/">back to index</a>
-	{% comment %}
-		FIXME, this can be done a lot better...
-	{% endcomment %}
-{% endif %}
-{{content}}
-
-
-{% include html_footer.html %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			{% if page.title %}
+				{{page.title}}
+			{% else %}
+				dannyedel.github.io
+			{% endif %}
+		</title>
+		<link rel="stylesheet" type="text/css" href="/css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="/css/page-generator.css" />
+		<link rel="stylesheet" type="text/css" href="/css/github-light.css" />
+	</head>
+	<body>
+		{% if page.title %}
+			<h1>{{page.title}}</h1>
+		{% endif %}
+		{{content}}
+	</body>
+</html>
