@@ -1,0 +1,26 @@
+exclude:
+  - vendor
+  - Gemfile
+
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - autolink
+    - with_toc_data
+
+# mimick github
+# changeable
+highlighter: pygments
+
+# mimick github
+# fixed
+safe: true
+lsi: false
+source: .
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
