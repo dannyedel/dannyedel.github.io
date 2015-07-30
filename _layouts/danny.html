@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			{% if page.title %}
+				{{page.title}}
+			{% else %}
+				dannyedel.github.io
+			{% endif %}
+		</title>
+	</head>
+	<body>
+		{% if page.title %}
+			<h1>{{page.title}}</h1>
+		{% endif %}
+		{{content}}
+	</body>
+</html>
